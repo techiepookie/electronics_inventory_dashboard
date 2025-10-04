@@ -24,9 +24,9 @@ def check_password():
         password = st.session_state["password"]
         
         # Get credentials from environment variables
-        valid_username = os.getenv("INVENTORY_USERNAME", "admin")
-        valid_password = os.getenv("INVENTORY_PASSWORD", "admin123")
-        
+        valid_password = os.getenv("INVENTORY_PASSWORD")
+        valid_username = os.getenv("INVENTORY_USERNAME")
+
         # Hash the entered password for comparison
         if username == valid_username and password == valid_password:
             st.session_state["password_correct"] = True
