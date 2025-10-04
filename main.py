@@ -50,14 +50,7 @@ def check_password():
         st.error("😕 Invalid username or password")
     
     st.divider()
-    st.info("💡 **Setup Instructions:**\n\n"
-            "1. Create a `.env` file in the same folder as this app\n"
-            "2. Add these lines:\n"
-            "```\n"
-            "INVENTORY_USERNAME=your_username\n"
-            "INVENTORY_PASSWORD=your_password\n"
-            "```\n"
-            "3. Restart the app")
+   
     
     return False
 
@@ -184,7 +177,7 @@ if st.sidebar.button("🚪 Logout"):
 
 st.sidebar.divider()
 
-menu = st.sidebar.radio("Navigation", ["📊 Dashboard", "➕ Add Item", "🔍 Search & Manage", "📥 Bulk Import"])
+menu = st.sidebar.radio("Navigation", ["📊 Dashboard", "➕ Add Item", "🔍 Search & Manage"])
 
 # Dashboard
 if menu == "📊 Dashboard":
