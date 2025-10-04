@@ -1,0 +1,13 @@
+# Environment variables
+.env
+.env.*
+
+# Database
+electronics_inventory.db
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# macOS system files
+.DS_Store
